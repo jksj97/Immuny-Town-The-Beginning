@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {font-size: 16px;}
+body {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pink {background-color: #FEC3C3; z-index: -100;}
+.blue {background-color: #3444D1;}
+.bg_white{background-color: white;}
+
+ul, ol {list-style: none;}
+li, a {text-decoration: none;}
+
+
+/* Background  */
+/* Background ***  header  */
+header {max-width: 100vw; padding: 0 300px;}
+.head {display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 0;}
+.head h1 {display: flex; justify-content: center;}
+.head h1 img {padding: 0.5rem 0;}
+.head ul li {float: left; padding: 0.5rem; font-size: 0.9rem;}
+
+.top-banner-area {width: 360px; height: 700px; position: relative; border: 1px solid red;}
+
+/* Background ***  body  */
+.container {width: 100%; display: block; text-align: center; margin: 0 auto 100px auto; border: 1px solid red;}
+.inner {min-width: 360px; margin: auto;}
+
+
+/* content bg */
+/* content bg *** header */
+
+/* content bg *** body */
+/* content bg *** body *** 프로젝트 소개 */
+
+/* content bg *** body *** 프로젝트 캐릭터 소개 */
+.project-characer-info-cont {text-align: center;}
+.project-characer-info-cont ol li:nth-child(3) img {margin-left: 8rem;}
+
+/* content bg *** body *** 로드맵 소개 */
+#roadMap-area {border: 2px solid rgb(144, 0, 255); margin-top: 300px;}
+.roadMap-cont {display: flex; position: relative; width: 360px; margin: 0 auto; border: 1px solid black;}
+.roadMap-title-cont {z-index: 1; position: absolute; left: -100px; bottom: 100px;}
+
+/* .roadMap-content-text-cont {width: 100%; position: relative; border: 2px solid red;} */
+.roadMap-content-text-cont{width: 100%; position: relative; border: 4px solid rgb(0, 255, 89);}
+.first-road-content,
+.second-road-content,
+.thrid-road-content {}
+/* content bg *** body *** FaQ 소개 */
+
+
+
+
+
