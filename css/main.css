@@ -6,25 +6,32 @@
     box-sizing: border-box;
 }
 html {font-size: 16px;}
+
 body {
     font-size: 1rem;
     font-family: 'Lexend', sans-serif;
     position: relative;
 }
 
-.body{position: absolute; width: 100%; overflow: hidden;}
-
-.container{width: 100%; overflow: hidden;}
-.bg{background: url("../images/bg01.png") center; background-size: cover;}
-.inner{min-width: 320px; margin: 0 auto; text-align: center; border: 1px solid red;}
-
+.body{width: 100%; text-align: center; overflow: hidden;}
 .pink{background-color: #E3C6FE;}
 
-.set01, .set02, .set03, .set04, .set05, .set06{position: relative; }
+/* .container{border: 1px solid red;} */
+.inner{width: 325px; margin: 0 auto;}
 
-.set01 a img{margin-top: 3rem;}
-.set02, .set03, .set05{margin-top: 15rem;}
-.set01, .set04{padding-top: 10rem;}
+li{list-style: none;}
+
+.bg01, .bg02{background: url("../images/bg01.png"); background-size: cover;}
+
+.set01, .set02, .set03, .set04, .set05{position: relative; padding: 10rem 0 0 0;} 
+
+.set01 .set01-content01, 
+.set02 .set02-content01, 
+.set03 .set03-content01, 
+.set04 .set04-content01, 
+.set05 .set05-content01,
+.set06 .set06-content01{position: relative; z-index: 11;}
+
 
 .set02 .set02-bgContainer,
 .set03 .set03-bgContainer,
@@ -32,107 +39,65 @@ body {
 .set05 .set05-bgContainer,
 .set06 .set06-bgContainer{position: absolute; top: 0;}
 
-/* 개별 셋업 */
-/* 개별 셋업 *** SET02 */
-.set02 .set02-content01 img{position: relative; z-index: 1;}
-.set02 .set02-bgContainer img:nth-child(1){position: relative; top: -8rem; left: 14rem; right: 0rem; bottom: 0rem;}
-.set02 .set02-bgContainer img:nth-child(2){position: relative; top: 4rem; left: -15rem; bottom: 0rem;}
-.set02 .set02-bgContainer img:nth-child(3){position: relative; top: 20rem; left: 10rem; right: 0rem; bottom: 0rem;}
 
-/* 개별 셋업 *** SET03 */
-.set03{position: relative; right: 2rem; padding-bottom: 6rem;}
-.set03 .set03-content01{position: relative; z-index: 2;}
-.set03 .set03-bgContainer img:nth-child(1){position: relative; top: -9rem; left: -2.5rem;}
+.set01 a img{margin-top: 3rem;}
 
-#immunyWater{display: inline-block; position: absolute; top: 143rem; left: 49rem;}
+.set02 .set02-bgContainer img:nth-child(1) {float: right; position: relative; top: 2rem; left: 4rem;}
+.set02 .set02-bgContainer img:nth-child(2) {float: left; position: relative; top: 4rem; right: 4rem;}
+.set02 .set02-bgContainer img:nth-child(3) {float: right; position: relative; top: 20rem; left: 6.5rem;}
 
-/* 개별 셋업 *** SET04 */
-.set04 .set04-content01{position: relative; z-index: 2;}
-.set04 .set04-bgContainer img:nth-child(1){position: relative; top: 12.5rem; left: -10rem;}
-.set04 .set04-bgContainer img:nth-child(2){position: relative; top: 61rem; left: 7rem;}
+.set03 .set03-content01{right: 26px; padding-bottom: 4rem;}
+.set03 .set03-bgContainer img:nth-child(1) {float: left; position: relative; top: 0rem; right: 4rem;}
+.set03 .set03-bgContainer img:nth-child(2) {float: right; position: relative; top: 12rem; right: 1rem;}
 
-/* 개별 셋업 *** SET05 */
-.set05 .tab{position: relative; z-index: 100;}
-.set05 .set05-bgContainer img:nth-child(1){position: relative; top: -6rem; left: -9rem;}
-.set05 .set05-bgContainer img:nth-child(2){position: relative; top: 17.5rem; left: 11rem;}
-.set05 .set05-bgContainer img:nth-child(3){position: relative; top: 15.3rem; left: -6rem;}
-.set05 .set05-bgContainer img:nth-child(4){position: relative; top: 46rem; left: 3.6rem;}
+.set03 .set03-bgContainer img:nth-child(1) {float: left; position: relative; top: 0rem; right: 4rem;}
 
-.set05-btn{margin: 2rem 0 3rem 0;}
+.set04 .set04-bgContainer img:nth-child(1) {float: left; position: relative; top: 12rem; left: -12rem;}
+.set04 .set04-bgContainer img:nth-child(2) {float: right; position: relative; top: 60rem; right: 0rem;}
 
-/* set05 faq 아코디언 */
-.set05 .set05-content01{margin-bottom: 20px;}
-.accordion{margin-bottom: 5rem; position: relative; z-index: 10;}
-.accordion .tab{
-    width: 100%;
-    position: relative;   
-    text-align: center; 
-    box-shadow: 0 2px 8px rgba(128, 11, 67, 25%); 
+.set05{border-bottom: 1px solid #E3C6FE;}
+.set05 .NKCL {margin-top: 8rem;}
+.set05 .set05-bgContainer img:nth-child(1) {float: left; position: relative; top: 3rem; left: -6rem;}
+.set05 .set05-bgContainer img:nth-child(2) {float: right; position: relative; top: 21rem; right: -9rem;}
+.set05 .set05-bgContainer img:nth-child(3) {float: left; position: relative; top: 22rem; left: -6.5rem;}
+.set05 .set05-bgContainer img:nth-child(4) {float: right; position: relative; top: 44rem; right: -3rem;}
+.set05 .set05-btn{margin: 2.5rem 0 3rem 0;}
+
+.set05 .set05-content01{padding-bottom: 2rem;}
+.accordion{position: relative; z-index: 10; width: 100%; padding: 0 1rem;}
+.accordion ul li {margin-bottom: 1rem; background-color: #B3BFEE; border-radius: 1rem; box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); }
+input[id*= "answer"]{display: none;}
+input[id*="answer"] + label{
+    position: relative;
+    z-index: 10;
+    display: block; 
+    padding: 1.5rem 1rem; 
+    border: 1.5px solid #D7DFFF; 
     border-radius: 1rem; 
-    overflow: hidden;
-    margin-bottom: 20px;
-
-    transition: all .5s;
-    background-color: #B3BFEE;
-}
-
-.accordion .tab input{appearance: none; display: flex; align-items: center; justify-content: center;}
-.accordion .tab label{
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    background-color: #D7DFFF; 
+    box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); 
+    font-weight: 900;
+    line-height: 24px;
     cursor: pointer;
 }
 
-.accordion .tab label p{
-    position: relative; 
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    background-color: #D7DFFF;
-    width: 100%; 
-    padding: 2rem 0 2rem 0; 
-}
-
-.accordion .tab .faq-content{
-    max-height: 0;
-    transition: all .2s;
-    overflow: hidden;
-}
-
-.accordion .tab input:checked ~ .faq-content{
-    max-height: 100vh;
-    height: 100%;
-    padding: 1.5rem 0;
-}
-
-.accordion .tab .faq-content span{
-    position: relative; 
-    margin: 1rem 0; 
-    font-size: 14px; 
-    z-index: 10;
+input[id*= "answer"] + label + div{
+    max-height: 0; 
+    transition: all .35s; 
+    overflow: hidden;  
+    font-size: 14px;
     font-weight: 600;
 }
-
-.accordion .tab input:checked ~ label{padding: 0;}
-.accordion .tab input:checked ~ label p{
-    width: 100%; 
-    padding: 2rem 0; 
-    box-shadow: 0 2px 8px rgba(128, 11, 67, 25%); 
-    border-radius: 1rem; 
+input[id*= "answer"] + label + div p{
+    display: inline-block;
+    padding: 1rem 10px;
 }
+input[id*= "answer"]:checked + label + div{max-height: 100px;}
 
-.appDown-faq .faq-content .download-app{margin-top: 1rem; text-align: center;}
-.appDown-faq .faq-content .download-app a:nth-child(1){margin-right: 2rem;}
 
-/* 개별 셋업 *** SET07 */
-.set06{text-align: left; padding: 5rem 30px 7rem 30px;}
-.set06 .snsLink-btn{position: absolute; margin-top: 1.5rem;}
-.set06 .snsLink-btn a p img{position: relative; right: 10px;}
-.snsLink-character{position: relative; top: 6rem; left: 10rem;}
-
+.set06{padding-top: 5rem; padding-left: 1rem; text-align: left;}
+.set06 .snsLink-btn{position: relative; right: 10px; padding: 1rem 0 2rem 0;}
+.snsLink-character{position: absolute; top: 10px; left: 8rem;}
 
 /* footer */
 .footer-container{padding: 5% 0%; text-align: left;}
@@ -143,4 +108,3 @@ body {
 .oner-cont{display: flex; padding-bottom: 2px;}
 .oner-cont span:nth-child(1){padding-right: 6px;}
 .oner-cont span:nth-child(2){position: relative; border-left: 2px solid black; padding-left: 6px;}
-/* .oner-cont span:nth-child(2)::before{content: ""; border-left: 2px solid black; position: absolute; top: 0; left: 6px;} */
