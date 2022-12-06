@@ -16,11 +16,11 @@ body {
 
 .container{width: 100%; overflow: hidden;}
 .bg{background: url("../images/bg01.png") center; background-size: cover;}
-.inner{width: 360px; margin: 0 auto; text-align: center;}
+.inner{min-width: 320px; margin: 0 auto; text-align: center; border: 1px solid red;}
 
 .pink{background-color: #E3C6FE;}
 
-.set01, .set02, .set03, .set04, .set05, .set06{position: relative;}
+.set01, .set02, .set03, .set04, .set05, .set06{position: relative; }
 
 .set01 a img{margin-top: 3rem;}
 .set02, .set03, .set05{margin-top: 15rem;}
@@ -86,10 +86,14 @@ body {
 
 .accordion .tab label p{
     position: relative; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 900;
     background-color: #D7DFFF;
     width: 100%; 
-    padding: 2rem 0; 
+    padding: 2rem 0 2rem 0; 
 }
 
 .accordion .tab .faq-content{
