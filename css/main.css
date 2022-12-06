@@ -56,11 +56,11 @@ li{list-style: none;}
 .set04 .set04-bgContainer img:nth-child(2) {float: right; position: relative; top: 60rem; right: 0rem;}
 
 .set05{border-bottom: 1px solid #E3C6FE;}
-.set05 .NKCL {margin-top: 8rem;}
+.set05 .NKCL {margin-top: 8rem; position: relative; z-index: 2;}
 .set05 .set05-bgContainer img:nth-child(1) {float: left; position: relative; top: 3rem; left: -6rem;}
 .set05 .set05-bgContainer img:nth-child(2) {float: right; position: relative; top: 21rem; right: -9rem;}
 .set05 .set05-bgContainer img:nth-child(3) {float: left; position: relative; top: 22rem; left: -6.5rem;}
-.set05 .set05-bgContainer img:nth-child(4) {float: right; position: relative; top: 44rem; right: -3rem;}
+.set05 .set05-bgContainer img:nth-child(4) {float: right; position: relative; top: 48rem; right: -6rem; z-index: 0;}
 .set05 .set05-btn{margin: 2.5rem 0 3rem 0;}
 
 .set05 .set05-content01{padding-bottom: 2rem;}
