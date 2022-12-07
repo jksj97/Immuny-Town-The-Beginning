@@ -103,15 +103,21 @@ input[id*= "answer"] + label + div p{
 input[id*= "answer"]:checked + label + div{max-height: 100px;}
 
 
-.set06{padding: 3rem 0 3rem 1rem; text-align: left;}
-.set06 .snsLink-btn{display: inline-block; position: relative; right: 10px; padding: 1rem 0 2rem 0;}
-.snsLink-character{position: absolute; top: 6px; left: 8rem;}
+.set05-btn{display: flex; align-items: center;}
+.set05-btn button{border: none; margin-bottom: 1rem; width: 120px; height: 46px; border-radius: 0.8rem; background-color: rgba(215, 223, 255, 30%); box-shadow: 0 2px 8px rgba(128, 11, 67, 18%);}
+.set05-btn button:nth-child(3){margin-bottom: 0;}
+
+.set06{padding: 3rem 0 2rem 1rem; text-align: left;}
+.set06 .snsLink-btn{position: relative; right: 10px; display: flex; align-items: center; justify-content: space-between;}
+.set06 .snsLink-btn .btn-container button {width: 120px; height: 46px; margin-bottom: 1rem; background-color: #EEE9FD; box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); border: none; border-radius: 0.8rem; color: black;}
+.set06 .snsLink-btn .btn-container button a{text-decoration: none; font-weight: 600; color: black; font-size: 14px;}
+.snsLink-character{position: relative; left: 2rem;}
 
 /* footer */
 .footer-container{padding: 5% 0%; text-align: left;}
 .name-NKCL{font-size: 14px; font-weight: 800 !important; padding: 2% 1%;}
 .footer-container .bot-cont{font-size: 12px; padding: 2% 1%; padding-top: 0;}
-.footer-container .bot-cont p{padding: 2px 0;}
+.footer-container .bot-cont p{padding: 2px 0; letter-spacing: -0.5px;}
 
 .oner-cont{display: flex; padding-bottom: 2px;}
 .oner-cont span:nth-child(1){padding-right: 6px;}
