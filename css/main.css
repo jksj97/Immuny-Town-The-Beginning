@@ -39,8 +39,8 @@ li{list-style: none;}
 .set05 .set05-bgContainer,
 .set06 .set06-bgContainer{position: absolute; top: 0;}
 
-.set01 a {display: inline-block;}
-.set01 a img{margin-top: 3rem;}
+.set01 a {display: inline-block; margin-top: 3rem;}
+.set01 a p {display: inline-block;}
 
 .set02 .set02-bgContainer img:nth-child(1) {float: right; position: relative; top: 2rem; left: 4rem;}
 .set02 .set02-bgContainer img:nth-child(2) {float: left; position: relative; top: 4rem; right: 4rem;}
