@@ -124,6 +124,7 @@ input[id*= "answer"]:checked + label + div{max-height: 100px;}
     font-weight: 600; 
     color: black; 
     font-size: 14px;
+    border: none;
     border-radius: 0.8rem;
 }
 .snsLink-character{position: relative; left: 2rem;}
