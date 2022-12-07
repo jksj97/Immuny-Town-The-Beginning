@@ -39,7 +39,7 @@ li{list-style: none;}
 .set05 .set05-bgContainer,
 .set06 .set06-bgContainer{position: absolute; top: 0;}
 
-
+.set01 a {display: inline-block;}
 .set01 a img{margin-top: 3rem;}
 
 .set02 .set02-bgContainer img:nth-child(1) {float: right; position: relative; top: 2rem; left: 4rem;}
@@ -55,13 +55,21 @@ li{list-style: none;}
 .set04 .set04-bgContainer img:nth-child(1) {float: left; position: relative; top: 12rem; left: -12rem;}
 .set04 .set04-bgContainer img:nth-child(2) {float: right; position: relative; top: 60rem; right: 0rem;}
 
-.set05{border-bottom: 1px solid #E3C6FE;}
+.set05{border-bottom: 1px solid #E3C6FE; text-align: center; margin: 0 auto;}
 .set05 .NKCL {margin-top: 8rem; position: relative; z-index: 2;}
 .set05 .set05-bgContainer img:nth-child(1) {float: left; position: relative; top: 3rem; left: -6rem;}
 .set05 .set05-bgContainer img:nth-child(2) {float: right; position: relative; top: 21rem; right: -9rem;}
 .set05 .set05-bgContainer img:nth-child(3) {float: left; position: relative; top: 22rem; left: -6.5rem;}
 .set05 .set05-bgContainer img:nth-child(4) {float: right; position: relative; top: 48rem; right: -6rem; z-index: 0;}
-.set05 .set05-btn{margin: 2.5rem 0 3rem 0;}
+.set05 .set05-btn{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
+    margin: 2.5rem 0 3rem 0;
+}
+.set05 .set05-btn a{display: inline-block;}
 
 .set05 .set05-content01{padding-bottom: 2rem;}
 .accordion{position: relative; z-index: 10; width: 100%; padding: 0 1rem;}
@@ -95,9 +103,9 @@ input[id*= "answer"] + label + div p{
 input[id*= "answer"]:checked + label + div{max-height: 100px;}
 
 
-.set06{padding-top: 5rem; padding-left: 1rem; text-align: left;}
-.set06 .snsLink-btn{position: relative; right: 10px; padding: 1rem 0 2rem 0;}
-.snsLink-character{position: absolute; top: 10px; left: 8rem;}
+.set06{padding: 3rem 0 3rem 1rem; text-align: left;}
+.set06 .snsLink-btn{display: inline-block; position: relative; right: 10px; padding: 1rem 0 2rem 0;}
+.snsLink-character{position: absolute; top: 6px; left: 8rem;}
 
 /* footer */
 .footer-container{padding: 5% 0%; text-align: left;}
